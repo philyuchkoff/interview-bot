@@ -142,10 +142,10 @@ func main() {
 
 // проверка наличия файлов с вопросами и ответами
 func checkFiles() error {
-    if _, err := os.Stat("q/questions.txt"); os.IsNotExist(err) {
+    if _, err := os.Stat("q/q.txt"); os.IsNotExist(err) {
         return fmt.Errorf("файл с вопросами не найден")
     }
-    if _, err := os.Stat("q/answ.txt"); os.IsNotExist(err) {
+    if _, err := os.Stat("q/a.txt"); os.IsNotExist(err) {
         return fmt.Errorf("файл с ответами не найден")
     }
     return nil
