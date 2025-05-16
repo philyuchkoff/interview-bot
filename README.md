@@ -19,6 +19,8 @@ Telegram-бот, который задает вопрос и ждет ответ
 ## Как работает:
 ### Установить зависимость:
 
+    go mod init github.com/philyuchkoff/interview-bot
+    go mod tidy
     go get gopkg.in/telebot.v3
 
 ### Создать структуру:
