@@ -23,13 +23,13 @@ type QuizBot struct {
 
 func main() {
 	// Читаем вопросы из файла
-	questions, err := readLines("/q/questions.txt")
+	questions, err := readLines("q/questions.txt")
 	if err != nil {
 		panic(err)
 	}
 
 	// Читаем ответы из файла
-	answers, err := readLines("/q/answ.txt")
+	answers, err := readLines("q/answ.txt")
 	if err != nil {
 		panic(err)
 	}
@@ -47,7 +47,7 @@ func main() {
 	}
 
 	// Создаем папку для логов, если ее нет
-	userLogsFolder := "/q/user_logs"
+	userLogsFolder := "q/user_logs"
 	if err := os.MkdirAll(userLogsFolder, 0755); err != nil {
 		panic(err)
 	}
