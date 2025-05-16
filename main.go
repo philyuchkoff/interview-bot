@@ -23,13 +23,13 @@ type QuizBot struct {
 
 func main() {
 	// Читаем вопросы из файла
-	questions, err := readLines("q/questions.txt")
+	questions, err := readLines("q/q.txt")
 	if err != nil {
 		panic(err)
 	}
 
 	// Читаем ответы из файла
-	answers, err := readLines("q/answ.txt")
+	answers, err := readLines("q/a.txt")
 	if err != nil {
 		panic(err)
 	}
